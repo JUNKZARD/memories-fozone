@@ -2,27 +2,24 @@
   text-decoration: none;
 }
 
-
 .navbar {
-display: flex; 
-justify-content: center;
-color: black;
+  display: flex;
+  justify-content: center;
+  color: black;
 }
 
 .navbar a {
-    color: black;
-    border: 1px solid black;
-    padding: 1rem;
-    border-radius: 2rem;
-    display: flex;
-    justify-content: left;
-    
+  color: black;
+  border: 1px solid black;
+  padding: 1rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: left;
 }
 
 .container .desk {
   display: flex;
-flex-direction: column;
-
+  flex-direction: column;
 }
 
 .container .desk a {
@@ -34,7 +31,8 @@ flex-direction: column;
 }
 
 .container {
-display: flex;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20rem;
 }
