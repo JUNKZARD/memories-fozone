@@ -1,11 +1,16 @@
 * {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
   color: black;
+  padding: 2rem;
 }
 
 .navbar a {
@@ -17,22 +22,39 @@
   justify-content: left;
 }
 
-.container .desk {
+main .container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 8rem;
 }
 
-.container .desk a {
+main .container .desk {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+}
+
+main .container .desk h1 {
+  font-size: 40px;
+  width: 30rem;
+}
+
+main .container .desk h1 span {
+  color: #5670d0;
+  font-size: 50px;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+main .container .desk p {
+  line-height: 1.5;
+}
+
+main .container .desk a {
   padding: 1rem;
   border: 1px solid black;
   border-radius: 2rem;
   color: black;
   text-align: center;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20rem;
+  width: 8rem;
 }
