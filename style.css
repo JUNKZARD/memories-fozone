@@ -6,6 +6,7 @@
   list-style: none;
 }
 
+/* Navigation Bar Start */
 .navbar {
   display: flex;
   justify-content: center;
@@ -21,7 +22,9 @@
   display: flex;
   justify-content: left;
 }
+/* Navigation Bar Ends */
 
+/* Konten Start */
 main .container {
   display: flex;
   justify-content: space-between;
@@ -58,3 +61,4 @@ main .container .desk a {
   text-align: center;
   width: 8rem;
 }
+/* Konten End */
