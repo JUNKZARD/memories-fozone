@@ -11,7 +11,8 @@
   display: flex;
   justify-content: center;
   color: black;
-  padding: 2rem;
+  padding: 1.5rem;
+  border-bottom: 1px solid black;
 }
 
 .navbar a {
@@ -49,8 +50,20 @@ main .container .desk h1 span {
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
 }
 
+main .container .desk h1 span:hover {
+  color: #fff;
+  background-color: #5670d0;
+  padding: 1rem;
+  border-radius: 4rem;
+}
+
 main .container .desk p {
   line-height: 1.5;
+  text-align: justify;
+  width: 26rem;
+  font-size: 18px;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 main .container .desk a {
@@ -60,5 +73,6 @@ main .container .desk a {
   color: black;
   text-align: center;
   width: 8rem;
+  font-size: 18px;
 }
 /* Konten End */
