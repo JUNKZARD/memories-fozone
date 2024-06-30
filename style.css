@@ -13,6 +13,11 @@
   color: black;
   padding: 1.5rem;
   border-bottom: 1px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .navbar a {
@@ -30,7 +35,7 @@ main .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 8rem;
+  margin: 7rem 8rem;
 }
 
 main .container .desk {
@@ -48,6 +53,7 @@ main .container .desk h1 span {
   color: #5670d0;
   font-size: 50px;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+  transition: 0.2s ease;
 }
 
 main .container .desk h1 span:hover {
