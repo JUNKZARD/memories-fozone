@@ -10,6 +10,8 @@
 .navbar {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 2rem;
   background-color: #fff;
   color: black;
   padding: 1.5rem;
@@ -36,7 +38,8 @@ main .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5rem 8rem;
+  margin: 3rem 8rem;
+  padding-top: 5rem;
 }
 
 main .container .desk {
@@ -60,7 +63,7 @@ main .container .desk h1 span {
 main .container .desk h1 span:hover {
   color: #fff;
   background-color: #5670d0;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 4rem;
 }
 
@@ -87,6 +90,7 @@ main .container .desk a {
 /* Konten 2 Start */
 .about {
   padding-top: 6rem;
+  margin-bottom: 20%;
 }
 
 .about h1 {
@@ -119,8 +123,12 @@ main .container .desk a {
 
 .about .box .box1 a {
   color: black;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 200;
+}
+
+.about .box .box1 p {
+  font-size: 18px;
 }
 
 .about .box .box2 {
@@ -142,7 +150,54 @@ main .container .desk a {
 
 .about .box .box2 a {
   color: black;
-  font-size: 28px;
+  font-size: 18px;
   font-weight: 200;
 }
+
+.about .box .box2 p {
+  font-size: 18px;
+}
 /* Konten 2 End */
+
+/* Footer Start */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.creator {
+  margin: 0 20px;
+}
+
+.creator p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.creator a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 2px 0;
+}
+
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
+}
+/* Footer End */
