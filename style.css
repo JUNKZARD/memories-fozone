@@ -29,7 +29,8 @@
   padding: 1rem;
   border-radius: 2rem;
   display: flex;
-  justify-content: left;
+  justify-content: center;
+  gap: 2rem;
 }
 /* Navigation Bar Ends */
 
@@ -38,6 +39,7 @@ main .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin: 3rem 8rem;
   padding-top: 5rem;
 }
@@ -102,6 +104,7 @@ main .container .desk a {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .about .box .box1 {
@@ -201,3 +204,97 @@ footer {
   font-size: 14px;
 }
 /* Footer End */
+
+@media (max-width: 450px) {
+  /* Konten 1 Start */
+  .navbar {
+    padding: 1rem;
+  }
+
+  .navbar a {
+    padding: 0.5rem;
+    font-size: small;
+  }
+
+  main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%;
+  }
+
+  main .container .desk h1 {
+    font-size: 28px;
+    width: 100%;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  main .container .desk h1 span:hover {
+    display: none;
+  }
+
+  main .container .desk p {
+    font-size: smaller;
+    width: 120%;
+    align-self: center;
+    margin-top: -1rem;
+    text-align: center;
+  }
+
+  main .container .desk a {
+    width: 50%;
+    font-size: small;
+    padding: 0.5rem 0.2rem;
+    align-self: center;
+    margin-top: 1rem;
+  }
+
+  main .container .image img {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  /* Konten 1 End */
+
+  /* Konten 2 Start */
+  main .about {
+    padding-top: 4rem;
+  }
+
+  main .about h1 {
+    font-size: 18px;
+  }
+
+  main .about .box {
+    gap: 4rem;
+  }
+
+  main .about .box .box1 {
+    width: 50%;
+    height: 250px;
+    gap: 1rem;
+  }
+
+  .about .box .box1 img {
+    width: 50%;
+  }
+
+  .about .box .box1 p {
+    font-size: small;
+  }
+
+  main .about .box .box2 {
+    width: 50%;
+    height: 250px;
+    gap: 1rem;
+  }
+
+  .about .box .box2 img {
+    width: 50%;
+  }
+
+  .about .box .box2 p {
+    font-size: small;
+  }
+  /* Konten 2 End */
+}
