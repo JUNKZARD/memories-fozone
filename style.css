@@ -79,13 +79,22 @@ main .container .desk p {
 }
 
 main .container .desk a {
-  padding: 1rem;
-  border: 1px solid black;
-  border-radius: 2rem;
-  color: black;
+  background: linear-gradient(to right, #5670d0, #83a2f5);
+  border: none;
+  border-radius: 25px;
+  width: 10rem;
+  color: white;
+  padding: 10px 20px;
   text-align: center;
-  width: 8rem;
+  text-decoration: none;
+  display: inline-block;
   font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.5s ease;
+}
+
+main .container .desk a:hover {
+  background: linear-gradient(to right, #83a2f5, #5670d0);
 }
 
 main .container .image img {
@@ -209,7 +218,7 @@ footer {
 }
 /* Footer End */
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   /* Konten 1 Start */
   .navbar {
     padding: 1rem;
