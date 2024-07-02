@@ -6,16 +6,23 @@
   list-style: none;
 }
 
+body {
+  background-color: #fff;
+}
+
 /* Navigation Bar Start */
+
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem auto;
   gap: 2rem;
-  background-color: #fff;
+  background: linear-gradient(to right, #5670d0, #c3d3ff);
   color: black;
-  padding: 1.5rem;
-  border-bottom: 1px solid black;
+  border-radius: 2rem;
+  padding: 1rem;
+  width: 80%;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,13 +31,38 @@
 }
 
 .navbar a {
-  color: black;
-  border: 1px solid black;
-  padding: 1rem;
-  border-radius: 2rem;
+  color: white;
+  padding: 0.5rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
+  font-size: 20px;
+  position: relative;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.2rem;
+  width: 100%;
+  height: 0.15rem;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s linear;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar a:hover::after,
+.navbar a:focus::after,
+.navbar a.active::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 /* Navigation Bar Ends */
 
@@ -40,7 +72,7 @@ main .container {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 3rem 8rem;
+  margin: 2rem 8rem;
   padding-top: 5rem;
 }
 
@@ -226,14 +258,14 @@ footer {
 
   .navbar a {
     padding: 0.5rem;
-    font-size: small;
+    font-size: 14px;
   }
 
   main .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -5%;
+    margin-top: 0%;
   }
 
   main .container .desk h1 {
