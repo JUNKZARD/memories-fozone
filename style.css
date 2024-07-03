@@ -395,7 +395,7 @@ footer .footer-logo img:hover {
 }
 /* responsive mobile 1 */
 /* responsive mobile 2 */
-@media (max-width: 350px) {
+@media (max-width: 400px) {
   main .container {
     display: flex;
     justify-content: center;
