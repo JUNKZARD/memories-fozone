@@ -290,7 +290,7 @@ footer .footer-logo img:hover {
   font-size: 14px;
 }
 /* Footer End */
-
+/* responsive mobile 1 */
 @media (max-width: 500px) {
   /* Konten 1 Start */
   .navbar {
@@ -317,7 +317,6 @@ footer .footer-logo img:hover {
   }
 
   main .container .desk h1 span {
-    background-color: #fff;
     padding: 0;
   }
 
@@ -394,3 +393,25 @@ footer .footer-logo img:hover {
     width: 15%;
   }
 }
+/* responsive mobile 1 */
+/* responsive mobile 2 */
+@media (max-width: 350px) {
+  main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+
+  .about {
+    width: 85%;
+  }
+
+  .about .box .box1,
+  .about .box .box2 {
+    width: 90%;
+    height: 250px;
+    gap: 1rem;
+  }
+}
+/* responsive mobile 2 */
