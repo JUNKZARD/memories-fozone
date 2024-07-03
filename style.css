@@ -6,6 +6,11 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 4rem 0 0 0;
+}
+
 body {
   background-color: #fff;
 }
@@ -23,8 +28,8 @@ body {
   border-radius: 2rem;
   padding: 1rem;
   width: 80%;
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: 1rem;
   left: 0;
   right: 0;
   z-index: 9999;
@@ -72,8 +77,13 @@ main .container {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 2rem 8rem;
-  padding-top: 5rem;
+  margin: 1rem auto 2rem auto;
+  margin-bottom: 3rem;
+  background: linear-gradient(to bottom right, #ffffff, #e0f7fa);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  width: 90%;
 }
 
 main .container .desk {
@@ -85,20 +95,23 @@ main .container .desk {
 main .container .desk h1 {
   font-size: 40px;
   width: 30rem;
+  color: #333;
 }
 
 main .container .desk h1 span {
   color: #5670d0;
   font-size: 50px;
   text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
-  transition: 0.2s ease;
+  transition: color 0.3s ease, text-shadow 0.3s ease, transform 0.3s ease;
 }
 
 main .container .desk h1 span:hover {
   color: #fff;
-  background-color: #5670d0;
+  text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to right, #ffecb3, #ffc107);
   padding: 0.5rem;
   border-radius: 4rem;
+  transform: scale(1.1);
 }
 
 main .container .desk p {
@@ -108,6 +121,7 @@ main .container .desk p {
   font-size: 18px;
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
+  color: #555;
 }
 
 main .container .desk a {
@@ -131,18 +145,25 @@ main .container .desk a:hover {
 
 main .container .image img {
   filter: drop-shadow(1px 1px 20px #5670d0);
+  border-radius: 10px;
 }
 /* Konten 1 End */
 
 /* Konten 2 Start */
 .about {
   padding-top: 6rem;
-  margin-bottom: 20%;
+  background: linear-gradient(to right, #ffecb3, #ffc107);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .about h1 {
   text-align: center;
   padding: 2rem;
+  color: #333;
 }
 
 .about .box {
@@ -152,67 +173,74 @@ main .container .image img {
   flex-wrap: wrap;
 }
 
-.about .box .box1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-  border-radius: 2rem;
-  width: 400px;
-  height: 450px;
-  gap: 2rem;
-}
-
-.about .box .box1 img {
-  width: 200px;
-  border-radius: 2rem;
-}
-
-.about .box .box1 a {
-  color: black;
-  font-size: 18px;
-  font-weight: 200;
-}
-
-.about .box .box1 p {
-  font-size: 18px;
-}
-
+.about .box .box1,
 .about .box .box2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid #fff;
   border-radius: 2rem;
   width: 400px;
   height: 450px;
   gap: 2rem;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.about .box .box1 img,
 .about .box .box2 img {
   width: 200px;
   border-radius: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.about .box .box1 p,
+.about .box .box2 p {
+  font-size: 18px;
+  color: #333;
+}
+
+.about .box .box1 a,
 .about .box .box2 a {
-  color: black;
+  color: #333;
   font-size: 18px;
   font-weight: 200;
 }
 
-.about .box .box2 p {
-  font-size: 18px;
+.about .box .box1 a:hover,
+.about .box .box2 a:hover {
+  color: #ffc107;
 }
 /* Konten 2 End */
 
 /* Footer Start */
 footer {
-  background-color: #333;
+  background: linear-gradient(to right, #5670d0, #833ab4);
   color: white;
-  padding: 20px 0;
+  padding: 2rem 0;
+  padding-bottom: 3rem;
   text-align: center;
+  margin-top: 3rem;
+}
+
+footer .footer-logo img {
+  width: 5%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  padding: 8px;
+  height: auto;
+  margin-bottom: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+footer .footer-logo img:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.footer-nav {
+  margin-top: 1.5rem;
 }
 
 .footer-nav a {
@@ -220,12 +248,17 @@ footer {
   text-decoration: none;
   margin: 0 15px;
   font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #ffc107;
 }
 
 .social-media {
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 2rem;
 }
 
 .creator {
@@ -240,8 +273,16 @@ footer {
 .creator a {
   color: white;
   text-decoration: none;
-  display: block;
-  margin: 2px 0;
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.creator a:hover {
+  transform: translateY(-5px);
 }
 
 .copyright {
@@ -265,7 +306,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 0%;
+    width: 70%;
   }
 
   main .container .desk h1 {
@@ -275,8 +316,15 @@ footer {
     text-align: center;
   }
 
+  main .container .desk h1 span {
+    background-color: #fff;
+    padding: 0;
+  }
+
   main .container .desk h1 span:hover {
-    display: none;
+    background-color: #fff;
+    font-size: 50px;
+    color: #5670d0;
   }
 
   main .container .desk p {
@@ -302,44 +350,47 @@ footer {
   /* Konten 1 End */
 
   /* Konten 2 Start */
-  main .about {
-    padding-top: 4rem;
+  .about {
+    width: 70%;
   }
 
-  main .about h1 {
+  .about h1 {
     font-size: 18px;
+    padding-top: 0;
+    padding-bottom: 1rem;
   }
 
-  main .about .box {
+  .about .box {
     gap: 4rem;
   }
 
-  main .about .box .box1 {
-    width: 50%;
+  .about .box .box1,
+  .about .box .box2 {
+    width: 80%;
     height: 250px;
     gap: 1rem;
   }
 
-  .about .box .box1 img {
-    width: 50%;
-  }
-
-  .about .box .box1 p {
-    font-size: small;
-  }
-
-  main .about .box .box2 {
-    width: 50%;
-    height: 250px;
-    gap: 1rem;
-  }
-
+  .about .box .box1 img,
   .about .box .box2 img {
     width: 50%;
+  }
+
+  .about .box .box1 p,
+  .about .box .box2 p {
+    font-size: small;
   }
 
   .about .box .box2 p {
     font-size: small;
   }
   /* Konten 2 End */
+
+  footer {
+    font-size: 90%;
+  }
+
+  footer .footer-logo img {
+    width: 15%;
+  }
 }
