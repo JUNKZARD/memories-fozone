@@ -13,6 +13,7 @@ html {
 
 body {
   background-color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Navigation Bar Start */
@@ -323,7 +324,7 @@ footer .footer-logo img:hover {
   main .container .desk h1 span:hover {
     background-color: #fff;
     font-size: 50px;
-    color: #5670d0;
+    padding: 0% 2%;
   }
 
   main .container .desk p {
