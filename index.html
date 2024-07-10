@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Memories</title>
     <link
       rel="stylesheet"
@@ -35,9 +32,9 @@
       <div class="container" id="home">
           <div class="desk">
               <h1>Memories of <span>FOZONE</span></h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi optio voluptatem aperiam explicabo tenetur, ipsa non vel distinctio possimus a nulla magnam qui vero quo eaque, accusantium cumque culpa fugiat!</p>
+              <p>Website ini adalah galeri foto kenangan saat SMA, tempat menyimpan momen tak terlupakan bersama teman dan guru. Nikmati kembali keceriaan dan kebahagiaan masa lalu. <span>Jangan lupa untuk mengklik tombol "Memories" di bawah ini!</span></p>
               <br />
-              <a href="galery/index.html">Memories</a>
+              <a href="galery/index.html" target="_blank">Memories</a>
           </div>
           <div class="image">
               <img src="photo/channels4_profile-removebg-preview.png" alt="fozone">
@@ -48,6 +45,7 @@
 
       <!-- Konten 2 Start -->
       <main class="about" id="aboutus">
+        <section class="hidden">
         <h1>About Us</h1>
         <br />
         <div class="box">
@@ -62,9 +60,30 @@
             <a target="_blank" href="https://www.instagram.com/gungdepandu/" class="insta"><i class="fa-brands fa-instagram"></i></a>
           </div>
         </div>
+      </section>
       </main>
       <!-- Konten 2 End -->
-
+      <br><br><br><br>
+      <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://memories-of-fozone.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<br><br><br><br>
       <!-- Footer Start -->
       <footer>
         <div class="footer-logo">
